@@ -1,6 +1,6 @@
-@include font("Roboto", robotoregular, 400);
-@include font("Roboto", robotomedium, 500);
-@include font("Roboto", robotobold, 700);
+@include font("Open Sans", opensans, 400);
+@include font("Open Sans", opensansbold, 700);
+@include font("Banny", banny, 400);
 
 html {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
