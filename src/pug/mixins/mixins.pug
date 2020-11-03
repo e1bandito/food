@@ -10,3 +10,8 @@ mixin picture(img, alt, type)
     source(type="image/webp" srcset="img/" + img + "@2x.webp 2x,  img/" + img + ".webp 1x")/
     source(srcset="img/" + img + "@2x." + type + " 2x,  img/" + img + "." + type + " 1x")/
     img(src="img/" + img + "." + type + "" alt= alt)
+
+mixin sectionText(title, subtitle, text, blockName)
+  h3(class= blockName + '__info-title title')= title
+  p(class= blockName + '__info-subtitle')= subtitle
+  p(class= blockName + '__info-text')= text

@@ -94,3 +94,44 @@ a {
     }
   }
 }
+
+.title {
+  position: relative;
+  font-family: "Banny", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0 0 20px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $main;
+  }
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__col {
+  width: 50%;
+
+  &:first-child {
+    margin-right: 80px;
+  }
+}

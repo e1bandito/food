@@ -2,7 +2,10 @@ extends ../layout/layout
 include ../../blocks/btn/btn
 
 block variables
-  - var pageTitle = 'main'
+  - const pageTitle = 'main'
+
 
 block content
   include ../../blocks/header/header
+  main.main
+    include ../../blocks/about/about

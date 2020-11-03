@@ -1,0 +1,11 @@
+- const about = getData('about');
+
++b.SECTION.about.section(class= about.classes, id= about.id)
+  .container
+    +e.inner.section__inner
+      +e.col.section__col
+        +e.info
+          +sectionText(about.title, about.subTitle, about.text, 'about')
+      +e.col.section__col
+        +e.image
+          +picture(about.img, 'about us', 'jpg')
