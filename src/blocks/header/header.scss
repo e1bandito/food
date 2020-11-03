@@ -5,6 +5,18 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+}
+
+.header__inner {
+  flex-grow: 1;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__logo {
@@ -22,5 +34,9 @@
 }
 
 .header__info {
+  flex-grow: 1;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
