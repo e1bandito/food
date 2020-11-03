@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  border: 1px solid $main;
+  background-color: $main;
+  min-width: 200px;
+  padding: 19px 20px;
+  color: $white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken($main, 20%);
+    border-color: darken($main, 20%)
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid rgba($white, 0.2);
+
+    &:hover {
+      background-color: rgba($white, 0.2);
+      border: 1px solid rgba($white, 0.2);
+    }
+  }
+}

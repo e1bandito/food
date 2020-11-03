@@ -4,6 +4,16 @@
       +icon('logo')(width="150", height="150")
     include ../nav/nav
     +e.info
+      .overlay.overlay--header
       include ../sheldue/sheldue
+      +e.action
+        +e.action-text RESTAURANT
+        +e.H1.title hungry people
+        +e.controls
+          +lnk('book table', '#', 'btn--header')
+          +lnk('explore', '#', 'btn--header btn--outline')
       include ../social/social
+      +e.A.down-btn(href="#")
+        +e.SPAN.down-btn-inner
+          +icon('arrow-down')(width="14", heigth="10")
 
