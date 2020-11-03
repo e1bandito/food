@@ -1,14 +1,34 @@
 [
   {
     "path": "index.html",
-    "title": "main"
+    "title": "home"
   },
   {
-    "path": "page2.html",
-    "title": "page2"
+    "path": "#about",
+    "title": "about"
   },
   {
-    "path": "page3.html",
-    "title": "page3"
+    "path": "#team",
+    "title": "team"
+  },
+  {
+    "path": "#booking",
+    "title": "booking"
+  },
+  {
+    "path": "#menu",
+    "title": "menu"
+  },
+  {
+    "path": "#galerie",
+    "title": "galerie"
+  },
+  {
+    "path": "#events",
+    "title": "events"
+  },
+  {
+    "path": "#contact",
+    "title": "contact"
   }
 ]

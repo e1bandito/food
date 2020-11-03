@@ -1,3 +1,26 @@
 .header {
-  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__logo {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+
+  & svg {
+    fill: $main;
+  }
+}
+
+.header__info {
+  position: relative;
 }
