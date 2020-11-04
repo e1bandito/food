@@ -17,7 +17,7 @@
           <li class="nav__item"><a class="nav__link" href="index.html">home</a></li>
           <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
           <li class="nav__item"><a class="nav__link" href="#team">team</a></li>
-          <li class="nav__item"><a class="nav__link" href="#booking">booking</a></li>
+          <li class="nav__item"><a class="nav__link" href="#book">booking</a></li>
           <li class="nav__item"><a class="nav__link" href="#menu">menu</a></li>
           <li class="nav__item"><a class="nav__link" href="#galerie">galerie</a></li>
           <li class="nav__item"><a class="nav__link" href="#events">events</a></li>
@@ -85,6 +85,57 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="book" id="book">
+      <div class="container">
+        <div class="book__inner">
+          <div class="book__col">
+            <form class="book-form">
+              <h2 class="book-form__title title">book a table</h2>
+              <div class="book-form__wrap">
+                <div class="input"><label class="input__label"><input class="input__field" type="text" name="name" placeholder="Name" required="required" /></label></div>
+                <div class="input"><label class="input__label"><input class="input__field" type="email" name="email" placeholder="Email" required="required" /></label></div>
+                <div class="input"><label class="input__label"><input class="input__field" type="phone" name="phone" placeholder="Phone" required="required" /></label></div>
+                <div class="select"><label class="select__label"><select class="select__field" name="people" required="required">
+                      <option class="select__option" selected="selected" disabled="disabled">People</option>
+                      <option class="select__option" value="10">10</option>
+                      <option class="select__option" value="20">20</option>
+                      <option class="select__option" value="30">30</option>
+                      <option class="select__option" value="40">40</option>
+                      <option class="select__option" value="50">50</option>
+                    </select></label></div>
+                <div class="input"><label class="input__label"><input class="input__field" type="text" name="date" placeholder="Date (mm/dd)" required="required" /></label></div>
+                <div class="select"><label class="select__label"><select class="select__field" name="time" required="required">
+                      <option class="select__option" selected="selected" disabled="disabled">Time</option>
+                      <option class="select__option" value="08:00">08:00</option>
+                      <option class="select__option" value="09:00">09:00</option>
+                      <option class="select__option" value="10:00">10:00</option>
+                      <option class="select__option" value="11:00">11:00</option>
+                      <option class="select__option" value="12:00">12:00</option>
+                      <option class="select__option" value="13:00">13:00</option>
+                      <option class="select__option" value="14:00">14:00</option>
+                      <option class="select__option" value="15:00">15:00</option>
+                      <option class="select__option" value="16:00">16:00</option>
+                      <option class="select__option" value="17:00">17:00</option>
+                      <option class="select__option" value="18:00">18:00</option>
+                      <option class="select__option" value="19:00">19:00</option>
+                      <option class="select__option" value="20:00">20:00</option>
+                      <option class="select__option" value="21:00">21:00</option>
+                      <option class="select__option" value="22:00">22:00</option>
+                    </select></label></div>
+              </div><button class="btn btn--book-form" type="submit">book now</button>
+            </form>
+          </div>
+          <div class="book__col">
+            <div class="image">
+              <picture>
+                <source type="image/webp" srcset="img/book-img@2x.webp 2x,  img/book-img.webp 1x" />
+                <source srcset="img/book-img@2x.jpg 2x,  img/book-img.jpg 1x" /><img src="img/book-img.jpg" alt="book" /></picture>
+            </div>
+          </div>
+        </div>
+        <p class="book__sheldue">Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+40 729 131 637/+40 726 458 782</b></p>
       </div>
     </section>
   </main>

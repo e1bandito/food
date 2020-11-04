@@ -1,0 +1,7 @@
+mixin select(name, optArr, placeholder)
+  +b.select
+    +e.LABEL.label
+      +e.SELECT.field(name= name, required)
+        +e.OPTION.option(selected, disabled)= placeholder
+        each item in optArr
+          +e.OPTION.option(value= item)= item

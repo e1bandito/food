@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-top: 40px;
+  padding: 40px 0 100px;
 
   & .overlay {
     z-index: 0;
@@ -28,6 +28,8 @@
 
 .team__col {
   width: 50%;
+  display: flex;
+  align-items: center;
 
   &:first-child {
     margin-right: 80px;
@@ -35,6 +37,7 @@
 
   &--image-left {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
   }
 }
@@ -45,6 +48,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
 }
 
 .team__info-subtitle {
@@ -54,10 +58,12 @@
   text-align: center;
   line-height: 1.55;
   margin: 0 0 20px 0;
+  width: 100%;
 }
 
 .team__info-text {
   margin: 0;
   text-align: center;
   color: rgba($white, 0.9);
+  width: 100%;
 }
