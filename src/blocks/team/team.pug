@@ -1,0 +1,12 @@
+- const team = getData('team');
+
++b.SECTION.team#team
+  .overlay
+  .container
+    +e.H2.main-title.main-title= team.mainTitle
+    +e.inner
+      +e.col.--image-left
+        +image(team, 'image--left')
+      +e.col
+        +e.info
+          +sectionText(team.title, team.subTitle, team.text, 'team')

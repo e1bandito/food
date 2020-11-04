@@ -119,19 +119,16 @@ a {
   }
 }
 
-.section {
-  padding: 100px 0;
-}
 
-.section__inner {
-  display: flex;
-  justify-content: space-between;
-}
 
-.section__col {
-  width: 50%;
 
-  &:first-child {
-    margin-right: 80px;
-  }
+
+.main-title {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
 }
