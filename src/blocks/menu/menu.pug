@@ -1,0 +1,24 @@
+- const menuData = getData('menu')
+
++b.SECTION.menu
+  .container
+    +e.H2.title.title= menuData.title
+    +e.P.text= menuData.text
+    +e.tabs
+      +e.UL.title-list
+        each item, index in menuData.tabs
+          +e.LI.title-item(class= index === 0 ? '--active' : '')
+            +e.BUTTON.title-button(type="button")= item.title
+      +e.UL.content-list
+        each item, index in menuData.tabs
+          +e.LI.content-item(class= index === 0 ? '--active' : '')
+            each contentItem in item.content
+              +e.content-wrap
+                +e.content-item-inner
+                  +e.P.content-title= contentItem.title
+                  +e.P.content-price= contentItem.price
+                +e.P.content-desc= contentItem.desc
+
+
+
+
