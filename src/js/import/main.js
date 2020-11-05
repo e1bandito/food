@@ -1,3 +1,1 @@
-import $ from 'jquery';
-
-export const footer = document.querySelector('.footer');
+import {slider} from '../../blocks/speciality/speciality';

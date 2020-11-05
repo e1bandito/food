@@ -10,13 +10,17 @@
   line-height: 1.67;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
   border-radius: 5px;
   text-transform: uppercase;
 
   &:hover {
-    background-color: darken($main, 20%);
-    border-color: darken($main, 20%)
+    box-shadow: 0 0 10px 1px $main;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px 1px $main;
   }
 
   &--outline {

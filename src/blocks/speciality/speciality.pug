@@ -1,0 +1,15 @@
+- const spec = getData('specialities')
+
++b.SECTION.speciality#speciality
+  .overlay
+  .container
+    +e.H2.main-title.main-title= spec.mainTitle
+    +e.slider
+      each item in spec.items
+        +e.item
+          +e.inner
+            +e.col.--image-left
+              +image(item, 'image--left')
+            +e.col
+              +e.info
+                +sectionText(item.title, item.subTitle, item.text, 'team')
