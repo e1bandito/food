@@ -1,0 +1,11 @@
+- let images = ['event-1', 'event-2', 'event-3', 'event-4']
+
++b.SECTION.galerie#galerie
+  .container
+    +e.UL.list
+      each item in images
+        +e.LI.item
+          +e.image
+            +picture(item, item, 'jpg')
+
+
