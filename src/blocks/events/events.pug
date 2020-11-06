@@ -1,0 +1,13 @@
+- let wedding = {'img': 'wedding-img', 'alt': 'wedding', 'type': 'jpg'}
+- let corporate = {'img': 'corporate-img', 'alt': 'corporate', 'type': 'jpg'}
+
++b.SECTION.events#events
+  .overlay
+  .container
+    +e.H2.main-title.main-title private events
+    +e.inner
+      +e.col.--image-left
+        +image(wedding, 'image--left image--wedding')
+      +e.col
+        +image(corporate, 'image--corporate')
+    +e.P.contacts For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.
