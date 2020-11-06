@@ -1,0 +1,26 @@
+.textarea {
+  width: 100%;
+}
+
+.textarea__field {
+  width: 100%;
+  resize: none;
+  height: 120px;
+  background-color: $gray;
+  border: 1px solid $gray;
+  padding: 20px;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: $text-gray;
+  }
+
+  &:hover {
+    border-color: $main;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px 1px $main;
+  }
+}

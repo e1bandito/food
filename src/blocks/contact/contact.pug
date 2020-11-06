@@ -1,0 +1,24 @@
++b.SECTION.contact#contact
+  .container
+    +e.inner
+      +e.H2.title.title contact
+      +e.P.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+      +e.FORM.form
+        +e.top-wrap
+          +input('text', 'name', 'Name')
+          +input('email', 'email', 'Email')
+          +input('tel', 'phone', 'Phone')
+        +textarea('text', 'message', 'Message')
+        +e.bottom-wrap
+          +e.P.form-info
+            +e.SPAN.address
+              +icon('pin')(width="11", height="14")
+              |  5th London Boulevard, U.K.
+            +e.SPAN.phone
+              +icon('phone')(width="14", height="14")
+              +e.A.phone-link(href="tel:+40729131637") +40 729 131 637/
+              +e.A.phone-link(href="tel:+40726458782") +40 726 458 782
+            +e.SPAN.mail
+              +icon('mail')(width="15", height="12")
+              +e.A.mail-link(href="mailto:office@mindblister.com") office@mindblister.com
+          +btn('send message', 'submit', 'btn--contact')

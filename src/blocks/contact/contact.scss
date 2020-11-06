@@ -1,0 +1,100 @@
+.contact {
+  padding: 100px 0;
+
+  & .textarea {
+    margin-bottom: 3px;
+  }
+
+  & .btn--contact {
+    flex-grow: 1;
+  }
+}
+
+.contact__text {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 50px;
+  text-align: center;
+  max-width: 570px;
+}
+
+.contact__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  & .input {
+    width: calc((100% - 16px) / 3);
+  }
+}
+
+.contact__bottom-wrap {
+  display: flex;
+}
+
+.contact__form-info {
+  width: 625px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  margin: 0;
+}
+
+.contact__address {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba($text-gray, 0.5);
+
+  & svg {
+    margin-right: 5px;
+    fill: $main;
+  }
+}
+
+.contact__phone {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba($text-gray, 0.5);
+
+  & svg {
+    margin-right: 5px;
+    fill: $main;
+  }
+}
+
+.contact__phone-link {
+  color: rgba($text-gray, 0.5);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact__mail {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba($text-gray, 0.5);
+
+  & svg {
+    margin-right: 5px;
+    fill: $main;
+  }
+}
+
+.contact__mail-link {
+  color: rgba($text-gray, 0.5);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

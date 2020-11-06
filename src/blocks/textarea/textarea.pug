@@ -1,0 +1,4 @@
+mixin textarea(type, name, placeholder)
+  +b.textarea
+    +e.LABEL.label
+      +e.TEXTAREA.field(type= type, name= name, placeholder= placeholder, width="100%" required)
