@@ -91,6 +91,15 @@ a {
     &::before {
       top: 100px;
       height: calc(100% - 240px);
+
+      @include max($md) {
+        top: 0;
+        height: calc(100% - 140px);
+      }
+
+      @include max($sm) {
+        content: none;
+      }
     }
   }
 }
@@ -105,6 +114,10 @@ a {
   color: $black;
   margin: 0 0 20px 0;
 
+  @include max($md) {
+    font-size: 28px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -118,10 +131,6 @@ a {
     background-color: $main;
   }
 }
-
-
-
-
 
 .main-title {
   font-size: 12px;

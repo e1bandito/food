@@ -2,6 +2,10 @@
   width: 100%;
   max-width: 565px;
 
+  @include max($sm) {
+    max-width: 400px;
+  }
+
   & .btn--book-form {
     width: 100%;
   }
@@ -16,13 +20,25 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @include max($sm) {
+    flex-direction: column;
+  }
+
   & .input {
     width: calc((100% - 10px) / 2);
     margin-bottom: 10px;
+
+    @include max($sm) {
+      width: 100%;
+    }
   }
 
   & .select {
     width: calc((100% - 10px) / 2);
     margin-bottom: 10px;
+
+    @include max($sm) {
+      width: 100%;
+    }
   }
 }

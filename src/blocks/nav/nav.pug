@@ -1,7 +1,9 @@
 - const navList = getData('nav');
 
 +b.NAV.nav
-  +e.UL.list
-    each item in navList
-      +e.LI.item
-        +e.A.link(href= item.path)= item.title
+  include ../../components/burger/burger
+  +e.wrap
+    +e.UL.list
+      each item in navList
+        +e.LI.item
+          +e.A.link(href= item.path)= item.title

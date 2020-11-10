@@ -1,6 +1,10 @@
 .contact {
   padding: 100px 0;
 
+  @include max($md) {
+    padding: 40px 0;
+  }
+
   & .textarea {
     margin-bottom: 3px;
   }
@@ -16,6 +20,10 @@
   margin: 0 auto 50px;
   text-align: center;
   max-width: 570px;
+
+  @include max($sm) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact__top-wrap {
@@ -23,13 +31,27 @@
   justify-content: space-between;
   margin-bottom: 8px;
 
+  @include max($sm) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
   & .input {
     width: calc((100% - 16px) / 3);
+
+    @include max($sm) {
+      width: 100%;
+      margin-bottom: 8px;
+    }
   }
 }
 
 .contact__bottom-wrap {
   display: flex;
+
+  @include max(860) {
+    flex-direction: column-reverse;
+  }
 }
 
 .contact__form-info {
@@ -39,12 +61,21 @@
   align-items: center;
   padding-right: 8px;
   margin: 0;
+
+  @include max(860) {
+    padding-top: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 625px;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .contact__address {
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 12px;
   font-weight: 700;
   color: rgba($text-gray, 0.5);
@@ -58,7 +89,7 @@
 .contact__phone {
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 12px;
   font-weight: 700;
   color: rgba($text-gray, 0.5);
@@ -80,7 +111,7 @@
 .contact__mail {
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 12px;
   font-weight: 700;
   color: rgba($text-gray, 0.5);

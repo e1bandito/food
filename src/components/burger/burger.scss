@@ -28,10 +28,13 @@
     }
   }
 
-  @include max($sm) {
+  @include max($md) {
     display: flex;
-    order: 2;
-    margin-bottom: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
 
@@ -41,8 +44,8 @@
   right: 0;
   margin: auto;
   width: calc(100% - 10px);
-  height: 5px;
-  background-color: #ffb400;
+  height: 4px;
+  background-color: $main;
 
   &:first-child {
     top: 12px;

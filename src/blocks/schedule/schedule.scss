@@ -1,0 +1,32 @@
+.schedule {
+  @include max($md) {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    margin: auto;
+  }
+
+  @include max($sm) {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.schedule__text {
+  margin: 0;
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  padding-left: 48px;
+
+  @include max($md) {
+    writing-mode: initial;
+    transform: rotate(0);
+    padding-left: 10px;
+  }
+}

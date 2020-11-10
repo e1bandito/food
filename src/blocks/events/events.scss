@@ -16,6 +16,11 @@
   display: flex;
   justify-content: space-between;
   z-index: 2;
+
+  @include max($md) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .events__main-title {
@@ -31,8 +36,22 @@
   display: flex;
   align-items: center;
 
+  @include max($md) {
+    width: 100%;
+    max-width: 400px;
+  }
+
   &:first-child {
     margin-right: 80px;
+
+    @include max($lg) {
+      margin-right: 30px;
+    }
+
+    @include max($md) {
+      margin-bottom: 40px;
+      margin-right: 0;
+    }
   }
 
   &--image-left {
@@ -43,8 +62,20 @@
 }
 
 .events__contacts {
+  position: relative;
   margin: 0;
   padding-top: 40px;
   color: rgba($white, 0.5);
   text-align: center;
+  z-index: 4;
+}
+
+.events__link {
+  color: rgba($white, 0.5);
+  font-weight: 700;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

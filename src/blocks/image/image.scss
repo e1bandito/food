@@ -20,6 +20,12 @@
     padding: 20px;
     text-transform: uppercase;
     border-radius: 0 5px 5px 0;
+
+    @include max($lg) {
+      font-size: 18px;
+      width: 50px;
+      padding: 10px;
+    }
   }
 
   &--corporate::after {
@@ -38,6 +44,13 @@
     text-transform: uppercase;
     border-radius: 0 5px 5px 0;
     transform: rotate(180deg);
+
+    @include max($lg) {
+      font-size: 18px;
+      width: 50px;
+      padding: 10px;
+      height: calc(100% + 1px);
+    }
   }
 
   &::before {
@@ -52,6 +65,10 @@
     border: 20px solid $main;
     border-radius: 5px;
     z-index: 1;
+
+    @include max($md) {
+      border-width: 10px;
+    }
   }
 
   & img {

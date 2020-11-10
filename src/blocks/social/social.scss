@@ -1,9 +1,38 @@
+.social {
+  @include max($md) {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  @include max($sm) {
+    right: 0;
+    left: 0;
+    bottom: 150px;
+    margin: auto;
+    width: 200px;
+  }
+}
+
 .social__list {
   @include lsr;
+
+  @include max($md) {
+    display: flex;
+  }
 }
 
 .social__item {
   margin-bottom: 20px;
+
+  @include max($md) {
+    margin-bottom: 0;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
 
   &:last-child {

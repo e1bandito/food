@@ -16,6 +16,11 @@
   display: flex;
   justify-content: space-between;
   z-index: 2;
+
+  @include max($md) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .speciality__main-title {
@@ -31,8 +36,22 @@
   display: flex;
   align-items: center;
 
+  @include max($md) {
+    width: 100%;
+  }
+
   &:first-child {
     margin-right: 80px;
+
+    @include max($lg) {
+      margin-right: 30px;
+    }
+
+    @include max($md) {
+      margin-right: 0;
+      margin-bottom: 30px;
+      max-width: 400px;
+    }
   }
 
   &--image-left {
@@ -49,6 +68,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  padding: 0 10px;
 }
 
 .speciality__info-subtitle {
