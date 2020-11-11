@@ -31,10 +31,8 @@
   @include max($md) {
     display: flex;
     position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    right: 15px;
+    top: 24px;
   }
 }
 
