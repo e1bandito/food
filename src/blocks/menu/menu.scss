@@ -29,8 +29,7 @@
   max-width: 840px;
   margin: 0 auto 50px;
   width: 100%;
-  display: block;
-  white-space: nowrap;
+  display: flex;
 
   @include max($sm) {
     overflow-x: scroll;
@@ -42,14 +41,18 @@
 .menu__title-item {
   width: calc((100% - 20px) / 7);
   border-right: 1px solid rgba(51, 51, 51, 0.2);
-  display: inline-block;
 
   &:last-child {
     border: none;
+
+    @include max($sm) {
+      padding-right: 2px;
+    }
   }
 
   @include max($sm) {
     width: 80px;
+    flex: 1 0 80px;
   }
 
   &--active .menu__title-button {
