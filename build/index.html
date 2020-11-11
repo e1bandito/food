@@ -42,7 +42,7 @@
             <li class="social__item"><a class="social__link" href="#"><svg width="20" height="20"><use xlink:href="img/sprite.svg#icon_twitter"></use></svg></a></li>
             <li class="social__item"><a class="social__link" href="#"><svg width="20" height="20"><use xlink:href="img/sprite.svg#icon_instagram"></use></svg></a></li>
           </ul>
-        </div><a class="header__down-btn" href="#about"><span class="header__down-btn-inner"><svg width="14" heigth="10"><use xlink:href="img/sprite.svg#icon_arrow-down"></use></svg></span></a>
+        </div><a class="header__down-btn" href="#about"><span class="header__down-btn-inner"><svg width="14" height="10"><use xlink:href="img/sprite.svg#icon_arrow-down"></use></svg></span></a>
       </div>
     </div>
   </header>
@@ -98,9 +98,9 @@
               <div class="book-form__wrap">
                 <div class="input"><label class="input__label"><input class="input__field" type="text" name="name" placeholder="Name" required="required" /></label></div>
                 <div class="input"><label class="input__label"><input class="input__field" type="email" name="email" placeholder="Email" required="required" /></label></div>
-                <div class="input"><label class="input__label"><input class="input__field" type="phone" name="phone" placeholder="Phone" required="required" /></label></div>
+                <div class="input"><label class="input__label"><input class="input__field" type="tel" name="phone" placeholder="Phone" required="required" /></label></div>
                 <div class="select"><label class="select__label"><select class="select__field" name="people" required="required">
-                      <option class="select__option" selected="selected" disabled="disabled">People</option>
+                      <option class="select__option" selected="selected" disabled="disabled" value="">People</option>
                       <option class="select__option" value="10">10</option>
                       <option class="select__option" value="20">20</option>
                       <option class="select__option" value="30">30</option>
@@ -109,7 +109,7 @@
                     </select></label></div>
                 <div class="input"><label class="input__label"><input class="input__field" type="text" name="date" placeholder="Date (mm/dd)" required="required" /></label></div>
                 <div class="select"><label class="select__label"><select class="select__field" name="time" required="required">
-                      <option class="select__option" selected="selected" disabled="disabled">Time</option>
+                      <option class="select__option" selected="selected" disabled="disabled" value="">Time</option>
                       <option class="select__option" value="08:00">08:00</option>
                       <option class="select__option" value="09:00">09:00</option>
                       <option class="select__option" value="10:00">10:00</option>
@@ -616,6 +616,7 @@
       </div>
     </section>
     <section class="galerie" id="galerie">
+      <h2 class="galerie__title visually-hidden">Galerie</h2>
       <div class="container">
         <ul class="galerie__list">
           <li class="galerie__item">
@@ -660,7 +661,7 @@
               <div class="input"><label class="input__label"><input class="input__field" type="email" name="email" placeholder="Email" required="required" /></label></div>
               <div class="input"><label class="input__label"><input class="input__field" type="tel" name="phone" placeholder="Phone" required="required" /></label></div>
             </div>
-            <div class="textarea"><label class="textarea__label"><textarea class="textarea__field" type="text" name="message" placeholder="Message" width="100%" required="required"></textarea></label></div>
+            <div class="textarea"><label class="textarea__label"><textarea class="textarea__field" name="message" placeholder="Message" required="required"></textarea></label></div>
             <div class="contact__bottom-wrap">
               <p class="contact__form-info"><span class="contact__address"><svg width="11" height="14"><use xlink:href="img/sprite.svg#icon_pin"></use></svg> 5th London Boulevard, U.K.</span><span class="contact__phone"><svg width="14" height="14"><use xlink:href="img/sprite.svg#icon_phone"></use></svg><a class="contact__phone-link" href="tel:+40729131637">+40 729 131 637/</a><a class="contact__phone-link" href="tel:+40726458782">+40 726 458 782</a></span><span class="contact__mail"><svg width="15" height="12"><use xlink:href="img/sprite.svg#icon_mail"></use></svg><a class="contact__mail-link" href="mailto:office@mindblister.com">office@mindblister.com</a></span></p><button class="btn btn--contact" type="submit">send message</button>
             </div>
@@ -671,7 +672,7 @@
   </main>
   <footer class="footer">
     <div class="footer__inner">
-      <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8336.647662415264!2d-0.244703957003211!3d51.59572328871939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876112b847e1733%3A0x5459509257c80ef1!2zQm91bGV2YXJkIERyLCBFZGd3YXJlLCBMb25kb24sINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1604906077266!5m2!1sru!2sru" width="100%" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+      <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8336.647662415264!2d-0.244703957003211!3d51.59572328871939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876112b847e1733%3A0x5459509257c80ef1!2zQm91bGV2YXJkIERyLCBFZGd3YXJlLCBMb25kb24sINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1604906077266!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
       <div class="footer__bottom">
         <p class="footer__text">© Copyright&nbsp;<a class="footer__link" href="#">Mindblister</a> 2019</p>
       </div>
