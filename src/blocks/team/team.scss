@@ -6,6 +6,10 @@
   background-position: center center;
   padding: 40px 0 100px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/team-bg@2x.jpg");
+  }
+
   @include max($md) {
     padding: 40px 0;
   }

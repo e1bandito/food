@@ -57,6 +57,10 @@
       background-size: cover;
       z-index: 4;
       overflow: auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/team-bg@2x.jpg");
+      }
     }
   }
 }

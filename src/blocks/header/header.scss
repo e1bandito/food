@@ -7,6 +7,10 @@
   background-size: cover;
   display: flex;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-bg@2x.jpg");
+  }
+
   & .btn--header:not(:last-child) {
     margin-right: 40px;
 

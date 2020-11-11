@@ -6,6 +6,10 @@
   background-position: center center;
   padding: 40px 0 40px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/specialty-bg@2x.jpg");
+  }
+
   & .overlay {
     z-index: 0;
   }
