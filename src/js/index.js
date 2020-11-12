@@ -1,5 +1,6 @@
 import { components } from '../components/components';
 import {} from './import/main';
+import fslightbox from 'fslightbox';
 
 
 window.addEventListener('resize', () => {

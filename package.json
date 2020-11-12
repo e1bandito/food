@@ -36,6 +36,7 @@
     "bemto.pug": "^2.1.0",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
+    "fslightbox": "^3.2.2",
     "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-group-css-media-queries": "^1.2.2",

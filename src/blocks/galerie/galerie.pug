@@ -7,6 +7,5 @@
       each item in images
         +e.LI.item
           +e.image
-            +picture(item, item, 'jpg')
-
-
+            a(data-fslightbox, href="img/"+ item +"@2x.jpg")
+              +picture(item, item, 'jpg')
