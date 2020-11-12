@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.2",
     "slick-carousel": "^1.8.1",
     "svgxuse": "^1.2.6"
   }

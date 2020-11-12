@@ -93,7 +93,7 @@
       <div class="container">
         <div class="book__inner">
           <div class="book__col">
-            <form class="book-form">
+            <form class="book-form" id="book-form">
               <h2 class="book-form__title title">book a table</h2>
               <div class="book-form__wrap">
                 <div class="input"><label class="input__label"><input class="input__field" type="text" name="name" placeholder="Name" required="required" /></label></div>
@@ -107,7 +107,7 @@
                       <option class="select__option" value="40">40</option>
                       <option class="select__option" value="50">50</option>
                     </select></label></div>
-                <div class="input"><label class="input__label"><input class="input__field" type="text" name="date" placeholder="Date (mm/dd)" required="required" /></label></div>
+                <div class="input"><label class="input__label"><input class="input__field" type="text" name="date" placeholder="Date (yyyy-mm-dd)" required="required" /></label></div>
                 <div class="select"><label class="select__label"><select class="select__field" name="time" required="required">
                       <option class="select__option" selected="selected" disabled="disabled" value="">Time</option>
                       <option class="select__option" value="08:00">08:00</option>
@@ -661,7 +661,7 @@
               <div class="input"><label class="input__label"><input class="input__field" type="email" name="email" placeholder="Email" required="required" /></label></div>
               <div class="input"><label class="input__label"><input class="input__field" type="tel" name="phone" placeholder="Phone" required="required" /></label></div>
             </div>
-            <div class="textarea"><label class="textarea__label"><textarea class="textarea__field" name="message" placeholder="Message" required="required"></textarea></label></div>
+            <div class="textarea"><label class="textarea__label"><textarea class="textarea__field" name="message" placeholder="Message"></textarea></label></div>
             <div class="contact__bottom-wrap">
               <p class="contact__form-info"><span class="contact__address"><svg width="11" height="14"><use xlink:href="img/sprite.svg#icon_pin"></use></svg> 5th London Boulevard, U.K.</span><span class="contact__phone"><svg width="14" height="14"><use xlink:href="img/sprite.svg#icon_phone"></use></svg><a class="contact__phone-link" href="tel:+40729131637">+40 729 131 637/</a><a class="contact__phone-link" href="tel:+40726458782">+40 726 458 782</a></span><span class="contact__mail"><svg width="15" height="12"><use xlink:href="img/sprite.svg#icon_mail"></use></svg><a class="contact__mail-link" href="mailto:office@mindblister.com">office@mindblister.com</a></span></p><button class="btn btn--contact" type="submit">send message</button>
             </div>

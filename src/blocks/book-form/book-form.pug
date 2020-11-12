@@ -1,13 +1,13 @@
 - const people = [10, 20, 30, 40, 50]
 - const time = ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
 
-+b.FORM.book-form
++b.FORM.book-form#book-form
   +e.H2.title.title book a table
   +e.wrap
     +input('text', 'name', 'Name')
     +input('email', 'email', 'Email')
     +input('tel', 'phone', 'Phone')
     +select('people', people, 'People')
-    +input('text', 'date', 'Date (mm/dd)')
+    +input('text', 'date', 'Date (yyyy-mm-dd)')
     +select('time', time, 'Time')
   +btn('book now', 'submit', 'btn--book-form')
